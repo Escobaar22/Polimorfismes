@@ -1,5 +1,3 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+    Vehicle v1 = new Vehicle("1254XFM", 50);
 }
