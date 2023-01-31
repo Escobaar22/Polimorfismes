@@ -1,10 +1,11 @@
-public class Camion extends Coche{
+public class Camion extends Vehicle{
     
     public Camion(){
 
     }
 
     public Camion(String matricula, int velocitat){
-        super(matricula);
+        super(matricula,velocitat);
     }
+
 }
