@@ -12,9 +12,8 @@ public class Vehicle {
 
     }
 
-    public int accelerar(int velocitatAc){
+    public void accelerar(int velocitatAc){
         velocitat += velocitatAc;
-        return velocitat;
     }
 
     public String toString(){
