@@ -5,7 +5,7 @@ public class Coche extends Vehicle{
 
     }
 
-    public Coche(String matricula, int velocitat, int numeroPuertas){
+    public Coche(String matricula, int velocitat, int numeroPuertas) throws DemasiadoRapidoException {
         super(matricula, velocitat);
         this.numeroPuertas = numeroPuertas;
     }

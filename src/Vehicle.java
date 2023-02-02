@@ -6,13 +6,13 @@ public class Vehicle {
 
     }
 
-    public Vehicle(String matricula, int velocitat){
+    public Vehicle(String matricula, int velocitat) throws DemasiadoRapidoException {
         this.matricula = matricula;
         accelerar(velocitat);
 
     }
 
-    public void accelerar(int velocitatAc){
+    public void accelerar(int velocitatAc) throws DemasiadoRapidoException{
         velocitat += velocitatAc;
     }
 
