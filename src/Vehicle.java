@@ -17,6 +17,6 @@ public class Vehicle {
     }
 
     public String toString(){
-        return matricula + velocitat;
+        return "La matricula es "+matricula+ " y la velocidad "+velocitat+" km/h";
     }
 }

@@ -10,6 +10,6 @@ public class Remolc {
     }
 
     public String toString(){
-        return String.valueOf(pes);
+        return " "+pes;
     }
 }
