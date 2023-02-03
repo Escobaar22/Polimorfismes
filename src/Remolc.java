@@ -10,6 +10,6 @@ public class Remolc {
     }
 
     public String toString(){
-        return " "+pes;
+        return "pesa "+pes+" kg";
     }
 }

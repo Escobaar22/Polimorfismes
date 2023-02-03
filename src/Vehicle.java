@@ -6,17 +6,16 @@ public class Vehicle {
 
     }
 
-    public Vehicle(String matricula, int velocitat) throws DemasiadoRapidoException {
+    public Vehicle(String matricula, int velocitat){
         this.matricula = matricula;
-        accelerar(velocitat);
-
+        this.velocitat = velocitat;
     }
 
     public void accelerar(int velocitatAc) throws DemasiadoRapidoException{
-        velocitat += velocitatAc;
+        this.velocitat += velocitatAc;
     }
 
     public String toString(){
-        return "La matricula es "+matricula+ " y la velocidad "+velocitat+" km/h";
+        return "El vehiculo con matricula "+matricula+ " va a "+velocitat+" km/h";
     }
 }

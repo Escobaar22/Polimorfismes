@@ -6,8 +6,9 @@ public class Camion extends Vehicle{
 
     }
 
-    public Camion(String matricula, int velocitat) throws DemasiadoRapidoException {
+    public Camion(String matricula, int velocitat){
         super(matricula,velocitat);
+        this.remolqui = null;
     }
 
     public void ponRemolque(Remolc remolqui){
@@ -19,14 +20,18 @@ public class Camion extends Vehicle{
     }
 
     public void accelerar(int velocitatAc) throws DemasiadoRapidoException{
-        velocitat += velocitatAc;
-        if(remolqui != null && velocitat <= 100){
-
+        if(remolqui != null && velocitat+velocitatAc >= 100){
+            throw new DemasiadoRapidoException();
         }
-    }
+        super.accelerar(velocitatAc);
+        }
 
     public String toString(){
-        return matricula + velocitat + remolqui;
+        if(remolqui != null){
+            return super.toString() + " y lleva un remolque que " + remolqui.toString();
+        }else{
+            return super.toString();
+        }
     }
 }
 
