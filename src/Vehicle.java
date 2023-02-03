@@ -1,7 +1,7 @@
 /**
  * @author Poly Angel Escobar Sánchez
  */
-public class Vehicle {
+public abstract class Vehicle {
     protected String matricula;
     protected int velocitat = 0;
 
